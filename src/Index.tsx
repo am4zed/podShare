@@ -5,9 +5,4 @@ import { App } from './App';
 
 import './app.scss';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('app-root')
-);
+ReactDOM.render(<App />, document.getElementById('app-root'));

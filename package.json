@@ -1,7 +1,7 @@
 {
-  "name": "react-typescript-webpack",
+  "name": "project-template",
   "version": "1.0.0",
-  "description": "A very simple starter project for using React,TypeScript and Webpack.",
+  "description": "Project template with webpack, react, typescript, sass and mobx",
   "proxy": "http://localhost:8080",
   "main": "index.js",
   "scripts": {
