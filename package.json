@@ -17,7 +17,6 @@
   "author": "Grant Bartlett",
   "license": "MIT",
   "dependencies": {
-    "@blueprintjs/core": "^3.31.0",
     "@blueprintjs/select": "^3.13.7",
     "@types/react-color": "^3.0.4",
     "axios": "^0.19.2",
