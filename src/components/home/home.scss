@@ -11,8 +11,8 @@ $inset-text-shadow: 0px -1px 0px #111;
   padding-right: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  width: 100%;
-  height: 100%;
+ // width: 100%;
+ // height: 100%;
 
   background-color: $background-color-pale;
 }
@@ -31,28 +31,33 @@ $inset-text-shadow: 0px -1px 0px #111;
 
   &__section {
     background-color: $background-color-pale;
-    font-size: 30px;
-    text-shadow: $inset-text-shadow;
-    font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 400;
-    height: 25vh;
-  }
+ //   font-size: 30px;
+ //   text-shadow: $inset-text-shadow;
+ //   font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ //   font-weight: 400;
+ //   height: 25vh; 
+  } 
 
   &__slogan {
-    font-size: 10px;
-    font-weight: 400;
-    font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  //  font-size: 10px;
+  //  font-weight: 400;
   }
 
   &__categorydiv {
     position: relative;
-    height: 100vh;
+    font-size: 10px;
+  //  height: 100vh;
     width: 25%;
     display: inline-block;
   }
 
-  &__members {
-    background-color: $background-color-pale;
+  &__needhavediv {
+    position: relative;
+    font-size: 10px;
+  //  height: 100vh;
+    width: 50%;
+    display: inline-block;
   }
+
 }
 

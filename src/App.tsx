@@ -5,7 +5,7 @@ import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import Search from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
-import Home from './components/home/Home';
+import { Home } from './components/home/Home';
 import Login from './components/login/Login';
 import './app.scss';
 
