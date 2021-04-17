@@ -1,7 +1,9 @@
-import { observer } from 'mobx-react';
 import React from 'react';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
+import Search from './components/search';
 
 @observer
 export class App extends React.PureComponent {
@@ -9,7 +11,23 @@ export class App extends React.PureComponent {
   public render() {
     return (
       <div>
-        <button onClick={() => this.appState.incCount()}>Clicks: {this.appState.count}</button>
+        <BrowserRouter>
+          <nav>
+            <ul>
+              <li><Link to="/search">Search</Link></li>
+              <li><Link to="/">Home</Link></li>
+            </ul>
+          </nav>
+          <div>
+            <Switch>
+              <Route path="/search">
+                <Search />
+              </Route>
+              <Route path="/">
+              </Route>
+            </Switch>
+          </div>
+        </BrowserRouter>
         <PodProfile />
       </div>
     );
