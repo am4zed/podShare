@@ -28,3 +28,27 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+#nav {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  float: left;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
