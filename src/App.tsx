@@ -5,7 +5,8 @@ import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import Search from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
-
+import { Home } from './components/home/Home';
+import Login from './components/login/Login';
 import './app.scss';
 
 @observer
@@ -23,6 +24,9 @@ export class App extends React.PureComponent {
               <li>
                 <Link to='/home'>Home</Link>
               </li>
+              <li>
+                <Link to='/login'>Login</Link>
+              </li>
 
               {/* This will ultimately be a link on user profile */}
               <li>
@@ -38,7 +42,12 @@ export class App extends React.PureComponent {
               <Route path='/search'>
                 <Search />
               </Route>
-              <Route path='/home'></Route>
+              <Route path='/home'>
+                <Home/>
+              </Route>
+              <Route path='/login'>
+                <Login/>
+              </Route>
               <Route path='/user-profile' name='user-profile' component={UserProfile}>
                 <UserProfile />
               </Route>
