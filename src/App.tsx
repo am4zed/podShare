@@ -16,7 +16,7 @@ export class App extends React.PureComponent {
     return (
       <div>
         <BrowserRouter>
-          <nav>
+          <nav id="nav">
             <ul>
               <li>
                 <Link to='/search'>Search</Link>
