@@ -1,7 +1,7 @@
 import React from 'react';
 import { UserCard } from '../userCard/UserCard';
 
-import { users, pod } from '../../data/database';
+import { pods, users } from '../../data/database';
 import { PodCard } from '../podCard/PodCard';
 
 import './user-profile.scss';
@@ -31,8 +31,8 @@ export class UserProfile extends React.Component {
             <h2 className='user-profile__heading'>{user.name}'s Pods</h2>
             {/* TODO - create PodMemberCard component  */}
             <div className='user-profile__podlist'>
-              <PodCard pod={pod[0]} />
-              <PodCard pod={pod[4]} />
+              <PodCard pod={pods[0]} />
+              <PodCard pod={pods[4]} />
             </div>
           </div>
         </div>

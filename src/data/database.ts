@@ -15,7 +15,7 @@ export const users: User[] = [
   }
 ];
 
-export const pod: Pod[] = [
+export const pods: Pod[] = [
   {
     id: '78594',
     name: 'we heart cycling',
@@ -43,12 +43,13 @@ export const pod: Pod[] = [
   { id: '46567', name: 'kids club', users: [], items: [] }
 ];
 
-export const item: Item[] = [
+export const items: Item[] = [
   {
     id: '75943',
     name: 'bike',
     description: 'dolor sit',
     type: ItemType.SPORTS,
+    image: 'blah',
     available: true
   },
   {
@@ -56,6 +57,7 @@ export const item: Item[] = [
     name: 'stand mixer',
     description: 'consectetur adipiscing elit, sed do eiusmod',
     type: ItemType.COOKING,
+    image: 'blah',
     available: true
   },
   {
@@ -63,6 +65,7 @@ export const item: Item[] = [
     name: 'food processer',
     description: 'adipiscing elit, sed do eiusmod tempor',
     type: ItemType.COOKING,
+    image: 'blah',
     available: false
   },
   {
@@ -70,6 +73,7 @@ export const item: Item[] = [
     name: 'pushchair',
     description: 'veniam, quis nostrud exercitation ullamco laboris',
     type: ItemType.KIDS,
+    image: 'blah',
     available: true
   },
   {
@@ -77,6 +81,7 @@ export const item: Item[] = [
     name: 'violin',
     description: 'aliquip ex ea commodo',
     type: ItemType.HOBBIES,
+    image: 'blah',
     available: false
   },
   {
@@ -84,6 +89,7 @@ export const item: Item[] = [
     name: 'cricut machine',
     description: 'dolore eu fugiat nulla par',
     type: ItemType.HOBBIES,
+    image: 'blah',
     available: true
   }
 ];
