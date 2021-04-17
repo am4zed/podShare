@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import Search from './components/search';
-import { UserProfile } from './components/userProfile/userProfile';
+import { UserProfile } from './components/userProfile/UserProfile';
 
 import './app.scss';
 
