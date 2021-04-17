@@ -103,14 +103,6 @@ export const items: Item[] = [
     available: true
   },
   {
-    id: '779943',
-    name: 'stand mixer',
-    description: 'consectetur adipiscing elit, sed do eiusmod',
-    type: ItemType.COOKING,
-    image: 'blah',
-    available: true
-  },
-  {
     id: '68732',
     name: 'food processer',
     description: 'adipiscing elit, sed do eiusmod tempor',
@@ -140,6 +132,15 @@ export const items: Item[] = [
     description: 'dolore eu fugiat nulla par',
     type: ItemType.HOBBIES,
     image: 'blah',
+    available: true
+  },
+  {
+    id: '779943',
+    name: 'tent',
+    description: 'consectetur adipiscing elit, sed do eiusmod',
+    type: ItemType.HOBBIES,
+    image:
+      'https://lifeundercanvas.co.uk/wp-content/uploads/2018/03/Life-shoot-May-8-small-200x200.jpg',
     available: true
   }
 ];

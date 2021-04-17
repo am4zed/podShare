@@ -38,7 +38,7 @@ export class App extends React.PureComponent {
               </li>
             </ul>
           </nav>
-          <div>
+          <div className='app-body'>
             <Switch>
               <Route path='/search'>
                 <Search />
