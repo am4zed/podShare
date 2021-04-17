@@ -4,8 +4,8 @@ import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import Search from './components/search';
-import Home from './components/Home';
-import Login from './components/Login';
+import Home from './components/home/Home';
+import Login from './components/login/Login';
 
 @observer
 export class App extends React.PureComponent {
