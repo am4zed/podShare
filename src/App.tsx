@@ -15,23 +15,31 @@ export class App extends React.PureComponent {
         <BrowserRouter>
           <nav>
             <ul>
-              <li><Link to="/search">Search</Link></li>
-              <li><Link to="/home">Home</Link></li>
+              <li>
+                <Link to='/search'>Search</Link>
+              </li>
+              <li>
+                <Link to='/home'>Home</Link>
+              </li>
+
+              {/* This will ultimately be a link on user profile */}
+              <li>
+                <Link to='/pod-profile'>Pod Profile</Link>
+              </li>
               <li><Link to="/user-profile">User Profile</Link></li>
             </ul>
           </nav>
           <div>
             <Switch>
-              <Route path="/search">
+              <Route path='/search'>
                 <Search />
               </Route>
-              <Route path="/home">
-              </Route>
+              <Route path='/home'></Route>
               <Route path="/user-profile" name="user-profile" component={UserProfile}>
                 <UserProfile />
               </Route>
-              <Route path="/pod-profile" name="pod-profile" compenent={ PodProfile }>
-                <PodProfile/>
+              <Route path='/pod-profile'>
+                <PodProfile />
               </Route>
             </Switch>
           </div>
