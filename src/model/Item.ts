@@ -13,5 +13,5 @@ export interface Item {
   name: string;
   description: string;
   type: ItemType;
-  availabile: boolean;
+  available: boolean;
 }
