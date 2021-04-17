@@ -6,7 +6,7 @@ body {
   font-weight: 400;
 
   h2 {
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -17,6 +17,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+// use this class for things you want to be semi-bold
+.label {
+  font-weight: 600;
 }
 
 #nav {

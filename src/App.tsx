@@ -7,6 +7,7 @@ import Search from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
 import { Home } from './components/home/Home';
 import Login from './components/login/Login';
+
 import './app.scss';
 
 @observer
@@ -16,7 +17,7 @@ export class App extends React.PureComponent {
     return (
       <div>
         <BrowserRouter>
-          <nav id="nav">
+          <nav id='nav'>
             <ul>
               <li>
                 <Link to='/search'>Search</Link>
@@ -43,10 +44,10 @@ export class App extends React.PureComponent {
                 <Search />
               </Route>
               <Route path='/home'>
-                <Home/>
+                <Home />
               </Route>
               <Route path='/login'>
-                <Login/>
+                <Login />
               </Route>
               <Route path='/user-profile' name='user-profile' component={UserProfile}>
                 <UserProfile />
