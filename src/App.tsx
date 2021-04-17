@@ -23,6 +23,9 @@ export class App extends React.PureComponent {
               <li>
                 <Link to='/home'>Home</Link>
               </li>
+              <li>
+                <Link to='/login'>Login</Link>
+              </li>
 
               {/* This will ultimately be a link on user profile */}
               <li>
