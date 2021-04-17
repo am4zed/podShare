@@ -12,19 +12,21 @@ export class ItemCard extends React.Component<ItemCardProps> {
     const { item } = this.props;
     return (
       <div className='item-card'>
-        <h2 className='item-card__name'>{item.name}</h2>
         <img className='item-card__image' src={item.image}></img>
-        <ul className='item-card__details'>
-          <li>
-            <span className='label'>Description:</span> <p>{item.description}</p>
-          </li>
-          <li>
-            <span className='label'>Category:</span> {item.type}
-          </li>
-          <li>
-            <span className='label'>Available:</span> {item.available ? 'yes' : 'no'}
-          </li>
-        </ul>
+        <div className='item-card__details-panel'>
+          <h2 className='item-card__name'>{item.name}</h2>
+          <ul className='item-card__info-list'>
+            <li>
+              <span className='label'>Description:</span> <p>{item.description}</p>
+            </li>
+            <li>
+              <span className='label'>Category:</span> {item.type}
+            </li>
+            <li>
+              <span className='label'>Available:</span> {item.available ? 'yes' : 'no'}
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
