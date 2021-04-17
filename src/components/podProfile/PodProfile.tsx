@@ -1,5 +1,5 @@
 import React from 'react';
-import { items, users } from '../../data/MockData';
+import { items, users } from '../../data/database';
 import { User } from '../../model/User';
 import { ItemCard } from '../item/ItemCard';
 import { UserCard } from '../userCard/UserCard';
