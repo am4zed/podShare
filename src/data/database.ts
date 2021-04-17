@@ -5,7 +5,57 @@ import { Item, ItemType } from '../model/Item';
 export const users: User[] = [
   {
     id: '7895',
-    name: 'bob',
+    name: 'Bob',
+    bio: 'lorem ipsum',
+    rating: 3,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH1'
+  },
+  {
+    id: '7896',
+    name: 'Sarah',
+    bio: 'lorem ipsum',
+    rating: 4,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH6'
+  },
+  {
+    id: '7897',
+    name: 'Rupert',
+    bio: 'lorem ipsum',
+    rating: 5,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH7'
+  },
+  {
+    id: '7898',
+    name: 'Jo',
+    bio: 'lorem ipsum',
+    rating: 4,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH1'
+  },
+  {
+    id: '7899',
+    name: 'Sam',
+    bio: 'lorem ipsum',
+    rating: 5,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH7'
+  },
+  {
+    id: '7900',
+    name: 'Jess',
     bio: 'lorem ipsum',
     rating: 3,
     pods: [],
