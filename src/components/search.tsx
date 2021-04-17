@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SearchForm extends React.Component {
+export class SearchForm extends React.Component {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -13,29 +13,6 @@ class SearchForm extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this);
-  };
-
-  handleInputChange(event: { target: { name: any; }; }) {
-    const target = event.target;
-    const value = target.value;
-
-    this.setState({
-      [event.target.name]: value
-    });
-  };
-
-  handleSelect(event: { target: { name: any; }; }) {
-    const target = event.target;
-    const value = target.value;
-
-    this.setState({
-      [event.target.name]: value
-    });
-  };
-
-  handleSubmit(event: { preventDefault: () => void; }) {
-    event.preventDefault();
-    this.props.history.push('/home');
   };
 
   render() {
@@ -85,7 +62,28 @@ class SearchForm extends React.Component {
       </div >
     )
   }
+
+  handleInputChange(event: { target: { name: any; }; }) {
+    const target = event.target;
+    const value = target.value;
+
+    this.setState({
+      [event.target.name]: value
+    });
+  };
+
+  handleSelect(event: { target: { name: any; }; }) {
+    const target = event.target;
+    const value = target.value;
+
+    this.setState({
+      [event.target.name]: value
+    });
+  };
+
+  handleSubmit(event: { preventDefault: () => void; }) {
+    event.preventDefault();
+  };
+
 };
 
-
-export default SearchForm;
