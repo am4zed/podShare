@@ -4,6 +4,7 @@ import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import Search from './components/search';
+import UserProfile from './components/userProfile/userProfile';
 
 @observer
 export class App extends React.PureComponent {
@@ -15,7 +16,8 @@ export class App extends React.PureComponent {
           <nav>
             <ul>
               <li><Link to="/search">Search</Link></li>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/home">Home</Link></li>
+              <li><Link to="/user-profile">User Profile</Link></li>
             </ul>
           </nav>
           <div>
@@ -23,12 +25,17 @@ export class App extends React.PureComponent {
               <Route path="/search">
                 <Search />
               </Route>
-              <Route path="/">
+              <Route path="/home">
+              </Route>
+              <Route path="/user-profile" name="user-profile" component={UserProfile}>
+                <UserProfile />
+              </Route>
+              <Route path="/pod-profile" name="pod-profile" compenent={ PodProfile }>
+                <PodProfile/>
               </Route>
             </Switch>
           </div>
         </BrowserRouter>
-        <PodProfile />
       </div>
     );
   }
