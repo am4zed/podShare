@@ -18,10 +18,10 @@ export class App extends React.PureComponent {
           <nav id="nav">
             <ul>
               <li>
-                <Link to='/search'>Search</Link>
+                <Link to='/home'>Home</Link>
               </li>
               <li>
-                <Link to='/home'>Home</Link>
+                <Link to='/search'>Search</Link>
               </li>
 
               {/* This will ultimately be a link on user profile */}
@@ -35,10 +35,10 @@ export class App extends React.PureComponent {
           </nav>
           <div>
             <Switch>
+              <Route exact path='/home'></Route>
               <Route path='/search'>
                 <SearchForm />
               </Route>
-              <Route path='/home'></Route>
               <Route path='/user-profile' name='user-profile' component={UserProfile}>
                 <UserProfile />
               </Route>
