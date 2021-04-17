@@ -1,0 +1,55 @@
+@import '../../style/palette.scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $background-color-pale;
+}
+
+// an example of BEM class naming
+
+.user-profile {
+  margin: 20px;
+  background-color: $background-color-darker;
+  border: 1px dotted $border-and-text;
+  
+
+  &__heading {
+    color: $border-and-text;
+  }
+
+  &__items {
+    background-color: $background-color-pale;
+  }
+
+  &__pods {
+    background-color: $background-color-pale;
+  }
+
+  &__userpic  {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: $border-and-text;
+  }
+
+  
+
+}
+
+.button-container {
+  &__join-button {
+    background-color: $base-color-1;
+    color: $border-and-text;
+  }
+
+  &__join-button2 {
+    background-color: $base-color-2;
+    color: $border-and-text;
+  }
+}
