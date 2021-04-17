@@ -1,5 +1,6 @@
 import React from 'react';
 import { User } from '../../model/User';
+import ItemCard from '../item/ItemCard';
 
 import './pod-profile.scss';
 
@@ -15,6 +16,7 @@ export class PodProfile extends React.Component {
           <h2 className='pod-profile__heading'>Outdoors Pod</h2>
           <div className='pod-profile__items'>
             <h2 className='pod-profile__heading'>Items</h2>
+            <ItemCard />
             {/* TODO - create Item component that can also be used in UserProfile.tsx */}
           </div>
           <div className='pod-profile__members'>
