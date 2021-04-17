@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
-import Search from './components/search';
+import SearchForm from './components/search';
 
 @observer
 export class App extends React.PureComponent {
@@ -30,7 +30,7 @@ export class App extends React.PureComponent {
           <div>
             <Switch>
               <Route path='/search'>
-                <Search />
+                <SearchForm />
               </Route>
               <Route path='/home'></Route>
               <Route path='/pod-profile'>
