@@ -6,7 +6,7 @@ body {
   font-weight: 400;
 
   h2 {
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -28,6 +28,11 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+// use this class for things you want to be semi-bold
+.label {
+  font-weight: 600;
+}
+
 #nav {
   text-align: center;
   position: fixed;

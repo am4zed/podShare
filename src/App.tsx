@@ -5,6 +5,8 @@ import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
 import { SearchForm } from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
+import { Home } from './components/home/Home';
+import Login from './components/login/Login';
 
 import './app.scss';
 
@@ -15,13 +17,16 @@ export class App extends React.PureComponent {
     return (
       <div>
         <BrowserRouter>
-          <nav id="nav">
+          <nav id='nav'>
             <ul>
               <li>
                 <Link to='/home'>Home</Link>
               </li>
               <li>
                 <Link to='/search'>Search</Link>
+              </li>
+              <li>
+                <Link to='/login'>Login</Link>
               </li>
 
               {/* This will ultimately be a link on user profile */}
@@ -35,9 +40,14 @@ export class App extends React.PureComponent {
           </nav>
           <div>
             <Switch>
-              <Route exact path='/home'></Route>
+              <Route path='/home'>
+                <Home />
+              </Route>
               <Route path='/search'>
                 <SearchForm />
+              </Route>
+              <Route path='/login'>
+                <Login />
               </Route>
               <Route path='/user-profile' name='user-profile' component={UserProfile}>
                 <UserProfile />

@@ -1,0 +1,17 @@
+@import '../../style/palette.scss';
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__photo {
+    height: 200px;
+    width: 200px;
+  }
+
+  &__info-list {
+    list-style: none;
+  }
+}
