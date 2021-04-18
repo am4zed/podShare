@@ -9,6 +9,7 @@
   @include box-shadow;
   color: $border-and-text;
   background-color: white;
+  cursor: pointer;
 
   h2 {
     text-transform: capitalize;
