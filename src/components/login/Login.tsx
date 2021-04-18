@@ -1,19 +1,19 @@
 import React from 'react';
 
 export default function Login() {
-  return(
-    <form>
+  return (
+    <form className='login__form'>
       <label>
         <p>Username</p>
-        <input type="text" />
+        <input type='text' />
       </label>
       <label>
         <p>Password</p>
-        <input type="password" />
+        <input type='password' />
       </label>
       <div>
-        <button type="submit">Submit</button>
+        <button type='submit'>Submit</button>
       </div>
     </form>
-  )
+  );
 }
