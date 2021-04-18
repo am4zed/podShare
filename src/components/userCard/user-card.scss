@@ -4,7 +4,19 @@
 .user-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+
   @include card;
+
+  background-color: white;
+
+  &__image {
+    height: 200px;
+    width: 200px;
+  }
+
+  &__info-list {
+    list-style: none;
+  }
 }

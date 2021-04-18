@@ -1,32 +1,49 @@
 @import '../../style/palette.scss';
+@import '../../style/mixins.scss';
 
-.main {
+// an example of BEM class naming
+
+.user-profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-color: $background-color-pale;
-}
+  &__body {
+    margin: 20px;
+  }
 
-// an example of BEM class naming
-
-.user-profile {
-  margin: 20px;
-  background-color: $background-color-darker;
-  border: 1px dotted $border-and-text;
-
+  &__hero {
+    background-color: $background-color-pale;
+    height: 250px;
+    border-radius: 10px;
+    padding: 20px;
+  }
 
   &__heading {
     color: $border-and-text;
   }
 
   &__items {
-    background-color: $background-color-pale;
+    padding: 20px;
   }
 
-  &__pods {
-    background-color: $background-color-pale;
+  &__item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px;
+  }
+
+  &__pod-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    text-align: center;
+    padding: 20px;
   }
 
   &__userpic {
@@ -39,7 +56,6 @@
   }
 
   li {
-    list-style: none
+    list-style: none;
   }
-
 }
