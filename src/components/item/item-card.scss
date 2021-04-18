@@ -1,12 +1,15 @@
 @import '../../style/palette.scss';
+@import '../../style/mixins.scss';
 
 .item-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  border: solid 1px $background-color-darker;
+  @include box-shadow;
 
-  &__photo {
+  &__image {
     height: 200px;
     width: 200px;
   }
