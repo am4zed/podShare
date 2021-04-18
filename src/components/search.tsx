@@ -1,18 +1,30 @@
 import React from 'react';
 
-export class SearchForm extends React.Component {
+export interface SearchFormState {
+  action: string,
+  item: string,
+  distance: number,
+  postcode: string
+}
+
+export interface SearchFormProp {
+
+}
+export class SearchForm extends React.Component<SearchFormProp, SearchFormState> {
   constructor(props: any) {
     super(props);
     this.state = {
       action: '',
       item: '',
-      distance: '',
+      distance: 0,
       postcode: ''
     };
 
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSelect = this.handleSelect.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleActionSelect = this.handleActionSelect.bind(this);
+    this.handleItemInput = this.handleItemInput.bind(this);
+    this.handleDistanceSelect = this.handleDistanceSelect.bind(this);
+    this.handlePostcodeInput = this.handlePostcodeInput.bind(this);
   };
 
   render() {
@@ -22,7 +34,7 @@ export class SearchForm extends React.Component {
           <fieldset>
             <p>I want to</p>
             <label>
-              <select placeholder="Please choose an option" name="action" value={this.state.action} onChange={this.handleSelect}>
+              <select placeholder="Please choose an option" name="action" value={this.state.action} onChange={this.handleActionSelect}>
                 <option value="">--Please choose an option--</option>
                 <option value="share">share</option>
                 <option value="borrow">borrow</option>
@@ -36,11 +48,11 @@ export class SearchForm extends React.Component {
                 value={this.state.item}
                 placeholder="item"
                 name="item"
-                onChange={this.handleInputChange} />
+                onChange={this.handleItemInput} />
             </label>
             <label>
               <p>within</p>
-              <select placeholder="Please choose your distance" name="distance" value={this.state.distance} onChange={this.handleSelect}>
+              <select placeholder="Please choose your distance" name="distance" value={this.state.distance} onChange={this.handleDistanceSelect}>
                 <option value="">--Please choose an option--</option>
                 <option value="5">5 miles</option>
                 <option value="10">10 miles</option>
@@ -54,7 +66,7 @@ export class SearchForm extends React.Component {
                 value={this.state.postcode}
                 placeholder="postcode"
                 name="postcode"
-                onChange={this.handleInputChange} />
+                onChange={this.handlePostcodeInput} />
             </label>
           </fieldset>
           <button type="submit">Submit</button>
@@ -63,27 +75,32 @@ export class SearchForm extends React.Component {
     )
   }
 
-  handleInputChange(event: { target: { name: any; }; }) {
-    const target = event.target;
-    const value = target.value;
-
+  handleActionSelect(event: React.ChangeEvent<HTMLSelectElement>) {
     this.setState({
-      [event.target.name]: value
-    });
-  };
+      ['action']: event.target.value
+    })
+  }
 
-  handleSelect(event: { target: { name: any; }; }) {
-    const target = event.target;
-    const value = target.value;
-
+  handleItemInput(event: React.ChangeEvent<HTMLInputElement>) {
     this.setState({
-      [event.target.name]: value
+      ['item']: event.target.value
+    })
+  }
+
+  handleDistanceSelect(event: React.ChangeEvent<HTMLSelectElement>) {
+    this.setState({
+      ['distance']: parseInt(event.target.value)
+    })
+  }
+
+  handlePostcodeInput(event: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({
+      ['postcode']: event.target.value
     });
   };
 
   handleSubmit(event: { preventDefault: () => void; }) {
     event.preventDefault();
   };
-
 };
 
