@@ -44,16 +44,18 @@ export class SearchForm extends React.Component<SearchFormProp, SearchFormState>
               <option value="borrow">borrow</option>
             </select>
           </label>
-          <p>a</p>
-          <label>
-            <span className="visually-hidden">item</span>
-            <input type="text"
-              id="item-searchbox"
-              value={this.state.item}
-              placeholder="item"
-              name="item"
-              onChange={this.handleItemInput} />
-          </label>
+          <div className="input-flex">
+            <span>a</span>
+            <label>
+              <span className="visually-hidden">item</span>
+              <input type="text"
+                id="item-searchbox"
+                value={this.state.item}
+                placeholder="item"
+                name="item"
+                onChange={this.handleItemInput} />
+            </label>
+          </div>
           <p>within</p>
           <label>
             <select
@@ -66,16 +68,18 @@ export class SearchForm extends React.Component<SearchFormProp, SearchFormState>
               <option value="10">10 miles</option>
             </select>
           </label>
-          <p>of</p>
-          <label>
-            <span className="visually-hidden">postcode</span>
-            <input type="text"
-              id="postcode-searchbox"
-              value={this.state.postcode}
-              placeholder="postcode"
-              name="postcode"
-              onChange={this.handlePostcodeInput} />
-          </label>
+          <div className="input-flex">
+            <span>of</span>
+            <label>
+              <span className="visually-hidden">postcode</span>
+              <input type="text"
+                id="postcode-searchbox"
+                value={this.state.postcode}
+                placeholder="postcode"
+                name="postcode"
+                onChange={this.handlePostcodeInput} />
+            </label>
+          </div>
           <div>
             <button className="search-button" type="submit">Submit</button>
           </div>

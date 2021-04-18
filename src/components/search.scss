@@ -18,15 +18,25 @@
   p {
     text-align: center;
   }
+
   select {
     border-style: solid;
     height: 2rem;
+    border-radius: 5px;;
   }
 
   input {
     border-style: double;
     height: 1.5rem;
     width: 95%;
+    border-radius: 5px;
+  }
+
+  .input-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
   }
 
   .search-button {
