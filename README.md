@@ -18,8 +18,3 @@ Where possible, plan the idea before the hack! We also learned more about the ci
 
 #What's next for podShare
 We'd like to get together and work on the backend of podShare, hopefully fleshing it out into a more functional platform.
-
-#Built With
-react
-sass
-typescript
