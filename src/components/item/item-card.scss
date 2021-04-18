@@ -7,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
   border: solid 1px $background-color-darker;
+  border-radius: 10px;
+
   @include box-shadow;
 
   &__image {
