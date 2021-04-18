@@ -15,50 +15,48 @@ export class App extends React.PureComponent {
   private readonly appState = new AppState();
   public render() {
     return (
-      <div>
-        <BrowserRouter>
-          <nav id='nav'>
-            <ul>
-              <li>
-                <Link to='/home'>Home</Link>
-              </li>
-              <li>
-                <Link to='/search'>Search</Link>
-              </li>
-              <li>
-                <Link to='/login'>Login</Link>
-              </li>
+      <BrowserRouter>
+        <nav id='nav'>
+          <ul>
+            <li>
+              <Link to='/home'>Home</Link>
+            </li>
+            <li>
+              <Link to='/search'>Search</Link>
+            </li>
+            <li>
+              <Link to='/login'>Login</Link>
+            </li>
 
-              {/* This will ultimately be a link on user profile */}
-              <li>
-                <Link to='/pod-profile'>Pod Profile</Link>
-              </li>
-              <li>
-                <Link to='/user-profile'>User Profile</Link>
-              </li>
-            </ul>
-          </nav>
-          <div>
-            <Switch>
-              <Route path='/home'>
-                <Home />
-              </Route>
-              <Route path='/search'>
-                <SearchForm />
-              </Route>
-              <Route path='/login'>
-                <Login />
-              </Route>
-              <Route path='/user-profile' name='user-profile' component={UserProfile}>
-                <UserProfile />
-              </Route>
-              <Route path='/pod-profile'>
-                <PodProfile />
-              </Route>
-            </Switch>
-          </div>
-        </BrowserRouter>
-      </div>
+            {/* This will ultimately be a link on user profile */}
+            <li>
+              <Link to='/pod-profile'>Pod Profile</Link>
+            </li>
+            <li>
+              <Link to='/user-profile'>User Profile</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className='app-pages'>
+          <Switch>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/search'>
+              <SearchForm />
+            </Route>
+            <Route path='/login'>
+              <Login />
+            </Route>
+            <Route path='/user-profile' name='user-profile' component={UserProfile}>
+              <UserProfile />
+            </Route>
+            <Route path='/pod-profile'>
+              <PodProfile />
+            </Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
