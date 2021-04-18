@@ -24,12 +24,9 @@ export class UserProfile extends React.Component {
                 <li>Item 3</li>
               </ul>
             </div>
-
-            {/* TODO - create Item component that can also be used in UserProfile.tsx */}
           </div>
           <div className='user-profile__pods'>
             <h2 className='user-profile__heading'>{user.name}'s Pods</h2>
-            {/* TODO - create PodMemberCard component  */}
             <div className='user-profile__podlist'>
               <PodCard pod={pods[0]} />
               <PodCard pod={pods[4]} />

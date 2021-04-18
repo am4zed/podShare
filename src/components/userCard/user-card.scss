@@ -2,6 +2,9 @@
 @import '../../style/palette.scss';
 
 .user-card {
-  border: solid 1px $background-color-darker;
-  @include box-shadow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include card;
 }

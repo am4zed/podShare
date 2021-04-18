@@ -1,6 +1,8 @@
 import React from 'react';
 import { Pod } from '../../model/Pod';
 
+import './pod-card.scss';
+
 export interface PodCardProps {
   pod: Pod;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
-import { items, users } from '../../data/database';
+import { items, pods, users } from '../../data/database';
 import { User } from '../../model/User';
 import { ItemCard } from '../item/ItemCard';
+import { PodCard } from '../podCard/PodCard';
 import { UserCard } from '../userCard/UserCard';
 
 import './pod-profile.scss';
@@ -15,24 +16,38 @@ export class PodProfile extends React.Component {
     return (
       <div className='pod-profile'>
         <div className='pod-profile__body'>
-          <h2 className='pod-profile__heading'>Outdoors Pod</h2>
+          <div className='pod-profile__hero'>
+            <div className='grid-container'>
+              <PodCard pod={pods[0]} />
+            </div>
+          </div>
           <div className='pod-profile__items'>
             <h2 className='pod-profile__heading'>Items</h2>
-            <div className='pod-profile__item-grid'>
-              {items.map((item) => (
-                <ItemCard key={item.id} item={item} />
-              ))}
+            <div className='grid-container'>
+              <div className='pod-profile__item-grid'>
+                {items.map((item) => (
+                  <ItemCard key={item.id} item={item} />
+                ))}
+              </div>
             </div>
           </div>
           <div className='pod-profile__members'>
             <h2 className='pod-profile__heading'>Members</h2>
-            {users.map((user) => (
-              <UserCard key={user.id} user={user} />
-            ))}
+            <div className='grid-container'>
+              <div className='pod-profile__member-grid'>
+                {users.map((user) => (
+                  <UserCard key={user.id} user={user} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className='button-container'>
-          <button className='button-container__join-button'>Join</button>
+        <div className='button-panel'>
+          <div className='button_cont'>
+            <a className='button-1' href='#' target='_blank' rel='nofollow'>
+              <span>Join</span>
+            </a>
+          </div>
         </div>
       </div>
     );
