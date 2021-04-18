@@ -1,4 +1,5 @@
 @import '../../style/palette.scss';
+@import '../../style/mixins.scss';
 
 .pod-profile {
   display: flex;
@@ -6,15 +7,20 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $background-color-pale;
-
   // an example of BEM class naming
 
   &__body {
     margin: 20px;
-    background-color: $background-color-darker;
-    background-color: white;
-    border: 1px solid $border-and-text;
+  }
+
+  &__hero {
+    height: 250px;
+    border-radius: 10px;
+    @include box-shadow;
+    background: url('https://www.railstotrails.org/media/983569/oregons-banks-vernonia-state-trail-photo-by-traillink-user-dabiker-820x312.jpg')
+      bottom center no-repeat;
+    background-size: cover;
+    padding: 10px 15px;
   }
 
   &__heading {
@@ -22,23 +28,42 @@
   }
 
   &__items {
-    background-color: $background-color-pale;
+    padding: 20px;
+  }
+
+  &__item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px;
   }
 
   &__members {
     display: flex;
-    background-color: $background-color-pale;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  &__member-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+    padding: 20px;
   }
 }
 
-.button-container {
-  &__join-button {
-    background-color: $base-color-1;
-    color: $border-and-text;
-  }
+.button-panel {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 
-  &__join-button2 {
-    background-color: $base-color-2;
-    color: $border-and-text;
+  .button-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

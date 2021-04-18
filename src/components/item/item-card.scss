@@ -6,10 +6,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px $background-color-darker;
-  border-radius: 10px;
 
-  @include box-shadow;
+  @include card; // box-shadow, border-radius
 
   &__image {
     height: 200px;

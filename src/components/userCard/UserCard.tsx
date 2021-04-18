@@ -15,9 +15,15 @@ export class UserCard extends React.Component<UserCardProps> {
         <h2 className='user-card__name'>{user.name}</h2>
         <img className='user-card__image' src={user.image}></img>
         <ul className='user-card__bio'>
-          <li>Rating: {this.renderRatingStars(user.rating)}</li>
-          <li>Location: {user.location}</li>
-          <li>Bio: {user.bio} </li>
+          <li>
+            <span className='label'>Rating:</span> {this.renderRatingStars(user.rating)}
+          </li>
+          <li>
+            <span className='label'>Location:</span> {user.location}
+          </li>
+          <li>
+            <span className='label'>Bio: {user.bio}</span>{' '}
+          </li>
         </ul>
       </div>
     );

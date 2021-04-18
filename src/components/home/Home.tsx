@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Pod } from '../../model/Pod';
 import { User } from '../../model/User';
-import { users } from '../../data/database';
+import { users, pods } from '../../data/database';
 
 import './home.scss';
+import { PodCard } from '../podCard/PodCard';
 
 export class Home extends React.Component {
   render() {
@@ -16,42 +17,27 @@ export class Home extends React.Component {
             <p className='home__slogan'>Build a pod, share the planet</p>
           </section>
           <section className='home__section'>
-            <h2 className='home__heading'>Select if you want to search/offer</h2>
-            <div className='home__needhavediv'>
+            <h3 className='home__subheading'>What do you want to do?</h3>
+            <div className='home__needhave-grid'>
               <Link to='/search'>I need / Search</Link>
-            </div>
-            <div className='home__needhavediv'>
               <Link to='/offer'>I have / Share</Link>
             </div>
           </section>
           <section className='home__section'>
-            <h2 className='home__heading'>Browse categories</h2>
-            <div className='home__categorydiv'>
+            <h3 className='home__subheading'>Browse categories</h3>
+            <div className='home__category-grid'>
               <Link to='/categories/sports'>Sports</Link>
-            </div>
-            <div className='home__categorydiv'>
               <Link to='/categories/cooking'>Cooking</Link>
-            </div>
-            <div className='home__categorydiv'>
               <Link to='/categories/diy'>DIY</Link>
-            </div>
-            <div className='home__categorydiv'>
               <Link to='/categories/kids'>Kids and Baby</Link>
             </div>
           </section>
           <section className='home__section'>
-            <h2 className='home__heading'>Browse Pods near you</h2>
-            <div className='home__categorydiv'>
-              <Link to='/pods/munrobaggers'>Munrobaggers</Link>
-            </div>
-            <div className='home__categorydiv'>
-              <Link to='/pods/cookingfiesta'>CookingFiesta</Link>
-            </div>
-            <div className='home__categorydiv'>
-              <Link to='/pods/codeclan'>CodeClan</Link>
-            </div>
-            <div className='home__categorydiv'>
-              <Link to='/pods/leithlinkshare'>Leith Links Share</Link>
+            <h3 className='home__subheading'>Browse Pods near you</h3>
+            <div className='home__pod-grid'>
+              <PodCard pod={pods[0]} />
+              <PodCard pod={pods[2]} />
+              <PodCard pod={pods[4]} />
             </div>
           </section>
         </div>

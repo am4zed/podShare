@@ -1,0 +1,16 @@
+@import '../../style/mixins.scss';
+@import '../../style/palette.scss';
+
+.pod-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include card;
+
+  &__name {
+    margin-left: 10px;
+    font-size: 40px;
+  }
+}
