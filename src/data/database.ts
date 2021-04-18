@@ -9,7 +9,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 3,
     pods: [],
-    image: 'blah',
+    image: 'src/images/bob.jpg',
     items: [],
     location: 'EH1'
   },
@@ -19,7 +19,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 4,
     pods: [],
-    image: 'blah',
+    image: 'src/images/sarah.jpg',
     items: [],
     location: 'EH6'
   },
@@ -29,7 +29,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 5,
     pods: [],
-    image: 'blah',
+    image: 'src/images/rupert.jpg',
     items: [],
     location: 'EH7'
   },
@@ -39,7 +39,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 4,
     pods: [],
-    image: 'blah',
+    image: 'src/images/jo.jpg',
     items: [],
     location: 'EH1'
   },
@@ -49,7 +49,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 5,
     pods: [],
-    image: 'blah',
+    image: 'src/images/sam.jpg',
     items: [],
     location: 'EH7'
   },
@@ -59,7 +59,7 @@ export const users: User[] = [
     bio: 'lorem ipsum',
     rating: 3,
     pods: [],
-    image: 'blah',
+    image: 'src/images/jess.jpg',
     items: [],
     location: 'EH1'
   }
@@ -99,7 +99,7 @@ export const items: Item[] = [
     name: 'bike',
     description: 'dolor sit',
     type: ItemType.SPORTS,
-    image: 'blah',
+    image: 'src/images/bike.jpg',
     available: true
   },
   {
@@ -107,7 +107,7 @@ export const items: Item[] = [
     name: 'food processer',
     description: 'adipiscing elit, sed do eiusmod tempor',
     type: ItemType.COOKING,
-    image: 'blah',
+    image: 'src/images/blender.jpg',
     available: false
   },
   {
@@ -115,7 +115,7 @@ export const items: Item[] = [
     name: 'pushchair',
     description: 'veniam, quis nostrud exercitation ullamco laboris',
     type: ItemType.KIDS,
-    image: 'blah',
+    image: 'src/images/pram.jpg',
     available: true
   },
   {
@@ -123,15 +123,15 @@ export const items: Item[] = [
     name: 'violin',
     description: 'aliquip ex ea commodo',
     type: ItemType.HOBBIES,
-    image: 'blah',
+    image: 'src/images/violin.jpg',
     available: false
   },
   {
     id: '5675',
-    name: 'cricut machine',
+    name: 'loom',
     description: 'dolore eu fugiat nulla par',
     type: ItemType.HOBBIES,
-    image: 'blah',
+    image: 'src/images/loom.jpg',
     available: true
   },
   {
@@ -139,8 +139,7 @@ export const items: Item[] = [
     name: 'tent',
     description: 'consectetur adipiscing elit, sed do eiusmod',
     type: ItemType.HOBBIES,
-    image:
-      'https://lifeundercanvas.co.uk/wp-content/uploads/2018/03/Life-shoot-May-8-small-200x200.jpg',
+    image: 'src/images/tent.jpg',
     available: true
   }
 ];
