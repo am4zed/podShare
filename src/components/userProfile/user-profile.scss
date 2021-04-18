@@ -59,17 +59,15 @@
     list-style: none;
   }
 }
-.button-panel {
+.user-buttons {
   height: 100px;
-
   position: relative;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 10px 10px;
-
   text-align: center;
-  padding: 20px 0px;
+  padding: 50px;
 
   .button-cont {
     display: flex;

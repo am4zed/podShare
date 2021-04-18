@@ -18,7 +18,7 @@ export class UserProfile extends React.Component {
             <div className='grid-container'>
               <UserCard user={user} />
             </div>
-            <div className='button-panel'>
+            <div className='user-buttons'>
               <div className='button_cont'>
                 <Link className='button-1' to='/search'>
                   <span>I need / Search</span>
