@@ -1,0 +1,40 @@
+@import '../style/palette.scss';
+
+#search {
+  background-color:$background-color-pale;
+  width: 100vw;
+  height: 100vh;  
+}
+
+#search-form {
+  margin-top: 50px;
+  &.centered {
+    position: fixed;
+    left: 50%;
+    margin-left: -100px;
+  }
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.search-button {
+  background-color: $base-color-2;
+  width: 100%;
+  border-style: none;
+  height: 1.25rem;
+  margin-top: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+select {
+  border-style: solid;
+}
+
+input {
+  border-style: double;
+}

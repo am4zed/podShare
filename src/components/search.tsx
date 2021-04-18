@@ -1,4 +1,5 @@
 import React from 'react';
+import './search.scss';
 
 export interface SearchFormState {
   action: string,
@@ -29,49 +30,57 @@ export class SearchForm extends React.Component<SearchFormProp, SearchFormState>
 
   render() {
     return (
-      <div>
-        <form action="/" method="post" onSubmit={this.handleSubmit}>
-          <fieldset>
-            <p>I want to</p>
-            <label>
-              <select placeholder="Please choose an option" name="action" value={this.state.action} onChange={this.handleActionSelect}>
-                <option value="">--Please choose an option--</option>
-                <option value="share">share</option>
-                <option value="borrow">borrow</option>
-              </select>
-            </label>
-            <p>a</p>
-            <label>
-              <span className="visually-hidden">item</span>
-              <input type="text"
-                id="item-searchbox"
-                value={this.state.item}
-                placeholder="item"
-                name="item"
-                onChange={this.handleItemInput} />
-            </label>
-            <label>
-              <p>within</p>
-              <select placeholder="Please choose your distance" name="distance" value={this.state.distance} onChange={this.handleDistanceSelect}>
-                <option value="">--Please choose an option--</option>
-                <option value="5">5 miles</option>
-                <option value="10">10 miles</option>
-              </select>
-            </label>
-            <p>of</p>
-            <label>
-              <span className="visually-hidden">postcode</span>
-              <input type="text"
-                id="postcode-searchbox"
-                value={this.state.postcode}
-                placeholder="postcode"
-                name="postcode"
-                onChange={this.handlePostcodeInput} />
-            </label>
-          </fieldset>
-          <button type="submit">Submit</button>
+      <div id="search">
+        <form action="/" id="search-form" className="centered" method="post" onSubmit={this.handleSubmit}>
+          <p className="no-margin-top">I want to</p>
+          <label>
+            <select
+              placeholder="Please choose an option"
+              name="action"
+              value={this.state.action}
+              onChange={this.handleActionSelect}>
+              <option value="">--Please choose an option--</option>
+              <option value="share">share</option>
+              <option value="borrow">borrow</option>
+            </select>
+          </label>
+          <p>a</p>
+          <label>
+            <span className="visually-hidden">item</span>
+            <input type="text"
+              id="item-searchbox"
+              value={this.state.item}
+              placeholder="item"
+              name="item"
+              onChange={this.handleItemInput} />
+          </label>
+          <p>within</p>
+          <label>
+            <select
+              placeholder="Please choose your distance"
+              name="distance"
+              value={this.state.distance}
+              onChange={this.handleDistanceSelect}>
+              <option value="">--Please choose an option--</option>
+              <option value="5">5 miles</option>
+              <option value="10">10 miles</option>
+            </select>
+          </label>
+          <p>of</p>
+          <label>
+            <span className="visually-hidden">postcode</span>
+            <input type="text"
+              id="postcode-searchbox"
+              value={this.state.postcode}
+              placeholder="postcode"
+              name="postcode"
+              onChange={this.handlePostcodeInput} />
+          </label>
+          <div>
+            <button className="search-button" type="submit">Submit</button>
+          </div>
         </form>
-      </div >
+      </div>
     )
   }
 
