@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
-import Search from './components/search';
+import { SearchForm } from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
 import { Home } from './components/home/Home';
 import Login from './components/login/Login';
@@ -20,10 +20,10 @@ export class App extends React.PureComponent {
           <nav id='nav'>
             <ul>
               <li>
-                <Link to='/search'>Search</Link>
+                <Link to='/home'>Home</Link>
               </li>
               <li>
-                <Link to='/home'>Home</Link>
+                <Link to='/search'>Search</Link>
               </li>
               <li>
                 <Link to='/login'>Login</Link>
@@ -40,11 +40,11 @@ export class App extends React.PureComponent {
           </nav>
           <div>
             <Switch>
-              <Route path='/search'>
-                <Search />
-              </Route>
               <Route path='/home'>
                 <Home />
+              </Route>
+              <Route path='/search'>
+                <SearchForm />
               </Route>
               <Route path='/login'>
                 <Login />

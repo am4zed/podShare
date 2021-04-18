@@ -17,8 +17,18 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 // use this class for things you want to be semi-bold
 .label {
   font-weight: 600;

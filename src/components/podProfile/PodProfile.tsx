@@ -20,14 +20,14 @@ export class PodProfile extends React.Component {
             <h2 className='pod-profile__heading'>Items</h2>
             <div className='pod-profile__item-grid'>
               {items.map((item) => (
-                <ItemCard item={item} />
+                <ItemCard key={item.id} item={item} />
               ))}
             </div>
           </div>
           <div className='pod-profile__members'>
             <h2 className='pod-profile__heading'>Members</h2>
             {users.map((user) => (
-              <UserCard user={user} />
+              <UserCard key={user.id} user={user} />
             ))}
           </div>
         </div>
