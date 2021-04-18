@@ -1,7 +1,8 @@
 import React from 'react';
-import { items, users } from '../../data/database';
+import { items, pods, users } from '../../data/database';
 import { User } from '../../model/User';
 import { ItemCard } from '../item/ItemCard';
+import { PodCard } from '../podCard/PodCard';
 import { UserCard } from '../userCard/UserCard';
 
 import './pod-profile.scss';
@@ -15,7 +16,11 @@ export class PodProfile extends React.Component {
     return (
       <div className='pod-profile'>
         <div className='pod-profile__body'>
-          <h2 className='pod-profile__heading'>Outdoors Pod</h2>
+          <div className='pod-profile__hero'>
+            <div className='grid-container'>
+              <PodCard pod={pods[0]} />
+            </div>
+          </div>
           <div className='pod-profile__items'>
             <h2 className='pod-profile__heading'>Items</h2>
             <div className='grid-container'>

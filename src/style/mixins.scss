@@ -7,4 +7,10 @@
 @mixin card {
   border-radius: 10px;
   @include box-shadow;
+  color: $border-and-text;
+  background-color: white;
+
+  h2 {
+    text-transform: capitalize;
+  }
 }
