@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import { AppState } from './AppState';
 import { PodProfile } from './components/podProfile/podProfile';
-import SearchForm from './components/search';
+import { SearchForm } from './components/search';
 import { UserProfile } from './components/userProfile/userProfile';
 
 import './app.scss';
