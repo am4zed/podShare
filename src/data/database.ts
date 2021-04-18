@@ -5,7 +5,57 @@ import { Item, ItemType } from '../model/Item';
 export const users: User[] = [
   {
     id: '7895',
-    name: 'bob',
+    name: 'Bob',
+    bio: 'lorem ipsum',
+    rating: 3,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH1'
+  },
+  {
+    id: '7896',
+    name: 'Sarah',
+    bio: 'lorem ipsum',
+    rating: 4,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH6'
+  },
+  {
+    id: '7897',
+    name: 'Rupert',
+    bio: 'lorem ipsum',
+    rating: 5,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH7'
+  },
+  {
+    id: '7898',
+    name: 'Jo',
+    bio: 'lorem ipsum',
+    rating: 4,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH1'
+  },
+  {
+    id: '7899',
+    name: 'Sam',
+    bio: 'lorem ipsum',
+    rating: 5,
+    pods: [],
+    image: 'blah',
+    items: [],
+    location: 'EH7'
+  },
+  {
+    id: '7900',
+    name: 'Jess',
     bio: 'lorem ipsum',
     rating: 3,
     pods: [],
@@ -53,14 +103,6 @@ export const items: Item[] = [
     available: true
   },
   {
-    id: '779943',
-    name: 'stand mixer',
-    description: 'consectetur adipiscing elit, sed do eiusmod',
-    type: ItemType.COOKING,
-    image: 'blah',
-    available: true
-  },
-  {
     id: '68732',
     name: 'food processer',
     description: 'adipiscing elit, sed do eiusmod tempor',
@@ -90,6 +132,15 @@ export const items: Item[] = [
     description: 'dolore eu fugiat nulla par',
     type: ItemType.HOBBIES,
     image: 'blah',
+    available: true
+  },
+  {
+    id: '779943',
+    name: 'tent',
+    description: 'consectetur adipiscing elit, sed do eiusmod',
+    type: ItemType.HOBBIES,
+    image:
+      'https://lifeundercanvas.co.uk/wp-content/uploads/2018/03/Life-shoot-May-8-small-200x200.jpg',
     available: true
   }
 ];
