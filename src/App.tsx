@@ -24,16 +24,15 @@ export class App extends React.PureComponent {
             <li>
               <Link to='/search'>Search</Link>
             </li>
-            <li>
-              <Link to='/login'>Login</Link>
-            </li>
-
             {/* This will ultimately be a link on user profile */}
             <li>
               <Link to='/pod-profile'>Pod Profile</Link>
             </li>
             <li>
               <Link to='/user-profile'>User Profile</Link>
+            </li>
+            <li className='login-button'>
+              <Link to='/login'>Sign in</Link>
             </li>
           </ul>
         </nav>
