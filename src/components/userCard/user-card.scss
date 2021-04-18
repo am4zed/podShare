@@ -2,6 +2,6 @@
 @import '../../style/palette.scss';
 
 .user-card {
-  border: solid 1px $background-color-darker;
-  @include box-shadow;
+  @include card;
+  background-color: $background-color-darker;
 }

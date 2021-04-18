@@ -3,3 +3,8 @@
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
 }
+
+@mixin card {
+  border-radius: 10px;
+  @include box-shadow;
+}

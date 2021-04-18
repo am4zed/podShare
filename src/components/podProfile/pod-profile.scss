@@ -14,7 +14,6 @@
     margin: 20px;
     background-color: $background-color-darker;
     background-color: white;
-    border: 1px solid $border-and-text;
   }
 
   &__heading {
@@ -23,22 +22,43 @@
 
   &__items {
     background-color: $background-color-pale;
+    padding: 10px 15px;
+  }
+
+  &__item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
   }
 
   &__members {
     display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
     background-color: $background-color-pale;
+  }
+
+  &__member-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    padding: 10px;
   }
 }
 
-.button-container {
-  &__join-button {
-    background-color: $base-color-1;
-    color: $border-and-text;
-  }
+.button-panel {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 
-  &__join-button2 {
-    background-color: $base-color-2;
-    color: $border-and-text;
+  .button-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

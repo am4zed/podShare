@@ -18,21 +18,31 @@ export class PodProfile extends React.Component {
           <h2 className='pod-profile__heading'>Outdoors Pod</h2>
           <div className='pod-profile__items'>
             <h2 className='pod-profile__heading'>Items</h2>
-            <div className='pod-profile__item-grid'>
-              {items.map((item) => (
-                <ItemCard key={item.id} item={item} />
-              ))}
+            <div className='grid-container'>
+              <div className='pod-profile__item-grid'>
+                {items.map((item) => (
+                  <ItemCard key={item.id} item={item} />
+                ))}
+              </div>
             </div>
           </div>
           <div className='pod-profile__members'>
             <h2 className='pod-profile__heading'>Members</h2>
-            {users.map((user) => (
-              <UserCard key={user.id} user={user} />
-            ))}
+            <div className='grid-container'>
+              <div className='pod-profile__member-grid'>
+                {users.map((user) => (
+                  <UserCard key={user.id} user={user} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className='button-container'>
-          <button className='button-container__join-button'>Join</button>
+        <div className='button-panel'>
+          <div className='button_cont'>
+            <a className='button-1' href='#' target='_blank' rel='nofollow'>
+              <span>Join</span>
+            </a>
+          </div>
         </div>
       </div>
     );
