@@ -4,6 +4,7 @@ import { UserCard } from '../userCard/UserCard';
 import { items, pods, users } from '../../data/database';
 import { PodCard } from '../podCard/PodCard';
 import { ItemCard } from '../item/ItemCard';
+import { Link } from 'react-router-dom';
 
 import './user-profile.scss';
 
@@ -12,10 +13,22 @@ export class UserProfile extends React.Component {
     const user = users[0];
     return (
       <div className='user-profile'>
-        <div className='pod-profile__body'>
+        <div className='user-profile__body'>
           <div className='user-profile__hero'>
             <div className='grid-container'>
               <UserCard user={user} />
+            </div>
+            <div className='button-panel'>
+              <div className='button_cont'>
+                <Link className='button-1' to='/search'>
+                  <span>I need / Search</span>
+                </Link>
+              </div>
+              <div className='button_cont'>
+                <Link className='button-1' to='/search'>
+                  <span>I have / Share</span>
+                </Link>
+              </div>
             </div>
           </div>
 
