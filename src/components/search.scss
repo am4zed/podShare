@@ -20,10 +20,13 @@
   }
   select {
     border-style: solid;
+    height: 2rem;
   }
 
   input {
     border-style: double;
+    height: 1.5rem;
+    width: 95%;
   }
 
   .search-button {
@@ -33,6 +36,7 @@
     margin-top: 1rem;
     color: $background-color-pale;
     font-size: 1.25rem;
+    border-radius: 5px;
     cursor: pointer;
     &:hover {
       background: $background-color-darker;
