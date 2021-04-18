@@ -1,10 +1,8 @@
 # podShare #
-<br/>
+
 ## Inspiration ##
-<br/>
 We were inspired by Facebook community groups such as "Meadows Share", and the idea of bringing local communities together.
-<br/>
-<br/>
+
 ## What it does ##
 <br/>
 podShare connects like-minded people within the local community and allows them to share infrequently used or hard to access goods.
